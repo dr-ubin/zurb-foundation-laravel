@@ -204,7 +204,7 @@ class FormBuilder extends \Illuminate\Html\FormBuilder
      */
     private function getErrorTag($name)
     {
-        return ($this->hasError($name) ? '<small class="error">'.implode(' ',$this->getError($name)).'</small>' :'' );
+        return ($this->hasError($name) ? '<small class="error server-side-error">'.implode(' ',$this->getError($name)).'</small>' :'' );
     }
 
     /**
